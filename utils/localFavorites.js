@@ -1,3 +1,4 @@
+
 const toggleFavorite = (id) => {
     let favorites = JSON.parse(localStorage.getItem("favorites") || "[]");
     if(favorites.includes(id)) {

@@ -2,8 +2,6 @@ import Head from 'next/head'
 import React from 'react'
 import { Navbar } from '../ui';
 
-const origin = (typeof window === "undefined") ? "" : window.location.origin; 
-
 export const Layout = ({children, title = "Pokemon app"}) => {
   return (
     <>

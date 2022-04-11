@@ -4,14 +4,14 @@ import React from 'react'
 
 const FavoriteCardPokemon = ({id}) => {
     const router = useRouter();
-    console.log(router)
+   
     
     const onFavoriteClick = () => router.push(`/pokemon/${id}`)
     
 
   return (
     <>
-        <Grid key={id} xs={6} sm={3} md={2} xl={1} onClick={onFavoriteClick}>
+        <Grid key={id} xs={6} sm={3} md={2} xl={1} onClick={onFavoriteClick} >
             <Card hoverable clickable css={{padding:10}} >
                 <Card.Image 
                     src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`}
